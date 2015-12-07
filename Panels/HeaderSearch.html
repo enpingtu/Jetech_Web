@@ -1,0 +1,22 @@
+<div id="SearchForm">
+    <form action="%%GLOBAL_ShopPath%%/search.php" method="get" onsubmit="return check_small_search_form(this)">
+        <label for="search_query">%%LNG_Search%%</label>
+      <!--  <input type="submit" class="Button fa fa-search" value="" name="Search" title="Search" />-->
+        
+        <button type="submit" class="Button" value="" name="Search" title="Search">
+                <i class="fa fa-search"></i> 
+        </button>
+        
+        
+        <input type="text" name="search_query" id="search_query" class="Textbox autobox" value="%%LNG_Search%%" style="color: #111;background:  0 0;background-color: white;"/>
+    </form>
+</div>
+
+<script type="text/javascript">
+    var QuickSearchAlignment = 'right';
+    var QuickSearchWidth = '390px';
+    lang.EmptySmallSearch = "%%LNG_EmptySmallSearch%%";
+    $(document).ajaxComplete(function() {
+        $('input[type=checkbox], select').not('.UniApplied').uniform();
+    });
+</script>  

@@ -1,0 +1,13 @@
+.btn.Small.icon-Add.To.Cart, .btn.cta.Small, .btn.cta.add-to-cart {
+    height:36px;
+    line-height:33px;
+    font-size:13px;
+    padding:0 20px;
+        background-color: #f88824;
+        border:none;
+}
+
+
+.btn.cta.add-to-cart:hover {
+  color: black;
+}
