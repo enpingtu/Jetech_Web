@@ -7,8 +7,8 @@
     border:none;
 }
 
-.btn.cta.add-to-cart:hover {
-  color: black;
+.btn.cta.add-to-cart:hover, .ModalContent a.btn.cta:hover:hover {
+  color: black !important;
 }
 
 .header-logo h1 a .Logo1stWord{
@@ -16,6 +16,7 @@
     font-weight: bold;
 }
 
-.p-price, .CartItemIndividualPrice h4, .ProductPrice {
+.p-price, .CartItemIndividualPrice h4, .ProductPrice, .ProductPrice h2, .ProductPrice h3  {
     color : #f88824;
 }
+​
