@@ -1,4 +1,4 @@
-.btn.cta, .btn.Small.icon-Add.To.Cart, .btn.cta.Small, .btn.cta.add-to-cart {
+.OrangeBtn, .btn.cta, .btn.Small.icon-Add.To.Cart, .btn.cta.Small, .btn.cta.add-to-cart {
     height:36px;
     line-height:33px;
     font-size:13px;
@@ -7,7 +7,7 @@
     border:none;
 }
 
-.btn.cta:hover, .ModalContent a.btn.cta:hover:hover {
+.OrangeBtn:hover, .btn.cta:hover, .ModalContent a.btn.cta:hover:hover {
     background-color: #f88824;
     color: black !important;
 }
