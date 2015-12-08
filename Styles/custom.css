@@ -7,7 +7,11 @@
         border:none;
 }
 
-
 .btn.cta.add-to-cart:hover {
   color: black;
 }
+
+.header-logo h1 a .Logo1stWord{
+    text-transform:none;
+    font-weight: bold;
+}​
