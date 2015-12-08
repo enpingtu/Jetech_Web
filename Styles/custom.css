@@ -28,4 +28,11 @@
 .BrandName, .DetailRow h1 {
     text-transform:none;
 }
-​
+
+.DetailRow h1 {
+	color : black;
+}
+.PriceInDetail {
+    font-weight : 500 !important;
+    color : red;
+}
