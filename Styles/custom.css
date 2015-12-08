@@ -7,8 +7,9 @@
     border:none;
 }
 
-.btn.cta.add-to-cart:hover, .ModalContent a.btn.cta:hover:hover {
-  color: black !important;
+.btn.cta:hover, .ModalContent a.btn.cta:hover:hover {
+    background-color: #f88824;
+    color: black !important;
 }
 
 .header-logo h1 a .Logo1stWord{
