@@ -1,10 +1,10 @@
-.btn.Small.icon-Add.To.Cart, .btn.cta.Small, .btn.cta.add-to-cart {
+.btn.cta, .btn.Small.icon-Add.To.Cart, .btn.cta.Small, .btn.cta.add-to-cart {
     height:36px;
     line-height:33px;
     font-size:13px;
     padding:0 20px;
-        background-color: #f88824;
-        border:none;
+    background-color: #f88824;
+    border:none;
 }
 
 .btn.cta.add-to-cart:hover {
@@ -14,8 +14,8 @@
 .header-logo h1 a .Logo1stWord{
     text-transform:none;
     font-weight: bold;
-}​
+}
 
-.p-price {
+.p-price, .CartItemIndividualPrice h4, .ProductPrice {
     color : #f88824;
-}​
+}
