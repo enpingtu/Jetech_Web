@@ -18,7 +18,7 @@
 
 .p-price, .CartItemIndividualPrice h4, .ProductPrice, .ProductPrice h2, .ProductPrice h3  {
     color : #f88824;
-    font-weight : bold;
+    font-weight : bold !important;
 }
 
 .p-price {
