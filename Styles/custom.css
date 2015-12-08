@@ -21,6 +21,11 @@
     font-weight : bold !important;
 }
 
-.p-price {
-    font-size : larger;
+.p-price, .ProductPrice {
+    font-size : 18px;
 }
+
+.BrandName, .DetailRow h1 {
+    text-transform:none;
+}
+​
