@@ -30,9 +30,15 @@
 }
 
 .DetailRow h1 {
-	color : black;
+    color : black;
 }
+
 .PriceInDetail {
     font-weight : 500 !important;
     color : red;
 }
+
+.AvailabilityInDetail {
+    color : green;
+}
+​
