@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 
-.p-price, .CartItemIndividualPrice h4, .ProductPrice, .ProductPrice h2, .ProductPrice h3  {
+.p-price, .CartItemIndividualPrice h4, .ProductPrice, .ProductPrice h2, .ProductPrice h3, .CurrentPrice  {
     color : #f88824;
     font-weight : bold !important;
 }
