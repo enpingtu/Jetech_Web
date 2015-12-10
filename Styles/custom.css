@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 
-.CartItemIndividualPrice h4, .ProductPrice h2, .ProductPrice h3, .CurrentPrice {
+.ProductPrice h2, .ProductPrice h3, .CurrentPrice {
     color : #f88824;
     font-weight : bold !important;
 }
@@ -34,7 +34,7 @@
     color : black;
 }
 
-.ProductPrice, .p-price, .PriceInDetail {
+.ProductPrice, .p-price, .RedPrice, .PriceInDetail {
     font-weight : 500 !important;
     color : red;
 }
