@@ -45,10 +45,26 @@
 
 .header-free-shipping {
 	width: 200px;
-	color: green;
+	color: #62c15b;
 	position: absolute;
 	top: 42px;
 	right: 30px;
 	font-weight : bold;
 	font-size : 16px;
+}
+
+.main {
+	background-color : white;
+}
+
+.ProductImage a{
+	border : none !important;
+}
+
+.ProductList li {
+	text-align: left;
+}
+
+.shareSlide, #SearchResultsCategoryAndBrand {
+	display : none;
 }
