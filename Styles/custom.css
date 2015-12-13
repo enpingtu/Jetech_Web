@@ -44,27 +44,39 @@
 }
 
 .header-free-shipping {
-	width: 200px;
-	color: #62c15b;
-	position: absolute;
-	top: 42px;
-	right: 30px;
-	font-weight : bold;
-	font-size : 16px;
+    width: 200px;
+    color: #62c15b;
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    font-weight : bold;
+    font-size : 16px;
 }
 
 .main {
-	background-color : white;
+    background-color : white;
 }
 
 .ProductImage a{
-	border : none !important;
+    border : none !important;
 }
 
 .ProductList li {
-	text-align: left;
+    text-align: left;
 }
 
 .shareSlide, #SearchResultsCategoryAndBrand {
-	display : none;
+    display : none;
+}
+
+.PageMenu #SideCategoryList h4, .PageMenu #SideCategoryList h5 {
+    display: none;
+}
+
+.PageMenu #SideCategoryList li a{
+    color : #5b524b;
+}
+
+#SideCategoryList .sf-menu li ul li:hover > a, #SideCategoryList .sf-menu li ul a:focus, #SideCategoryList .sf-menu li ul a:hover, #SideCategoryList .sf-menu li ul a:active {
+    background-color: #075899 ;
 }
