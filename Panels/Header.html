@@ -26,3 +26,12 @@
     <div class="header-logo-mobile"> %%GLOBAL_HeaderLogo%% </div>
   </div>
 </div>
+
+<script>
+$(document).ready(function() {
+    $('.PageMenu .expandable-hitarea').hide();
+    $('.PageMenu .collapsable-hitarea').hide();    
+    $('ul.sf-horizontal').addClass('sf-menu');
+    $('ul.sf-menu').superfish();
+});
+</script>​
