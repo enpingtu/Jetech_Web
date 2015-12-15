@@ -13,7 +13,9 @@
         </div>
         <div class="Content Widest" id="LayoutColumn1">
           <div class="PageMenu">%%Panel.PagesMenu%%  </div>
-          <div class="PageMenu" style="position: absolute;width:100%;display:none;"><div class="inner">%%Panel.SideCategoryList%%</div></div>
+            <span id="shopByCategory">Shop by Category <div class="arrow-down"></div>
+            <div id="categoryMenu" class="PageMenu">%%Panel.SideCategoryList%%</div>
+            </span>
           <div class="search-mobile mobile">%%Panel.HeaderSearch%%</div>
             <div class="header-free-shipping">Free Standard Shipping</div>
           <div class="header-secondary">
@@ -29,9 +31,6 @@
 
 <script>
 $(document).ready(function() {
-    $('.PageMenu .expandable-hitarea').hide();
-    $('.PageMenu .collapsable-hitarea').hide();    
-    $('.PageMenu ul.sf-horizontal').addClass('sf-menu');
-    $('.PageMenu ul.sf-menu').superfish();
+    initPageMenu();
 });
-</script>​
+</script>

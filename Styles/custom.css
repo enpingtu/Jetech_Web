@@ -7,6 +7,7 @@
     border:none;
 }
 
+
 .OrangeBtn:hover, .btn.cta:hover, .ModalContent a.btn.cta:hover:hover {
     background-color: #f88824;
     color: black !important;
@@ -65,7 +66,7 @@
     text-align: left;
 }
 
-.shareSlide, #SearchResultsCategoryAndBrand {
+#SearchResultsCategoryAndBrand {
     display : none;
 }
 
@@ -77,6 +78,58 @@
     color : #5b524b;
 }
 
-#SideCategoryList .sf-menu li ul li:hover > a, #SideCategoryList .sf-menu li ul a:focus, #SideCategoryList .sf-menu li ul a:hover, #SideCategoryList .sf-menu li ul a:active {
-    background-color: #075899 ; 
+.PageMenu li ul {
+    background: #EEF2F5;
+}
+
+#categoryMenu.PageMenu ul li {
+    padding-right:50px;
+}
+
+.PageMenu li ul li a:hover {
+    font-weight:bold;
+    font-size:larger;
+}
+
+.PageMenu li ul ul {
+    left: 210px !important
+}
+
+.PageMenu li ul li a.hasSub {
+    background: none;
+}
+
+#shopByCategory {
+    position: absolute !important;
+    color: wheat;
+    top : 80px;
+    left : -30px;
+}
+
+#categoryMenu{
+    position: relative;
+    width:100%;
+    display:none;
+    left:-20px;
+    font-size:15px;
+    padding-top:10px;
+}
+
+.arrow-down {
+    display: inline-block;
+    border-style: solid;
+    _border-style: dashed;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid #606060;
+    border-bottom-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 0 2px 5px;  
+}
+
+#shopByCategory:hover #categoryMenu {
+    display:block;  
 }
