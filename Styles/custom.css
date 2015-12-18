@@ -37,7 +37,7 @@
 
 .ProductPrice, .p-price, .RedPrice, .PriceInDetail {
     font-weight : 500 !important;
-    color : red;
+    color : #b12704 !important;
 }
 
 .AvailabilityInDetail {
@@ -100,6 +100,7 @@
 }
 
 #shopByCategory {
+    cursor : pointer;
     position: absolute !important;
     color: wheat;
     top : 80px;
@@ -146,6 +147,11 @@
     display:block;  
 }
 
+.shareSlide {
+    width:50%;
+    float:left;
+}
+
 .shareSlide .inner{
     margin-left: 0px !important;
 }
@@ -169,4 +175,75 @@
     top: -4px;
     left: 127.6px;
     position: absolute;
+}
+
+.ProductImage.QuickView {
+    text-align: left;
+}
+
+.ProductImage.QuickView a{
+    height:220px !important;
+}
+
+.myProductLi .ProductImage img{
+    margin-top:60px;
+}
+
+#ProductDetails .left-content {
+    width: 44%;
+}
+
+.PrimaryProductDetails .ProductMain {
+    width: 56%;
+}
+
+.ProductDetailsGrid.ProductAddToCart .Value.AddCartButton{
+    width:11%;
+}
+
+.addToCartBtnBox{
+    position: relative;
+    width: 87px;
+    height: 29px;
+    font-size: 13px;
+    border-color: #a88734 #9c7e31 #846a29;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    color: #111;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none!important;
+    vertical-align: middle;
+    font-family: Arial,sans-serif;
+    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+}
+
+.addToCartBtnBox.larger{
+    width: 150px;
+}
+
+.addToCartBtnBox:hover{
+    background: #f0c14b;
+}
+
+.addToCartBtnBox a, .addToCartBtnInput{
+    padding: 0 10px 0 9px;
+    white-space: nowrap;
+    line-height: 29px;
+    background-color: inherit;
+    border: none;
+}
+
+input.addToCartBtnInput{
+    cursor : pointer;
+    padding: 0;
+    font-size:15px;
+}
+
+.addToCartBtnBox a:hover, .addToCartBtnInput:hover{
+    color: #111;
 }
