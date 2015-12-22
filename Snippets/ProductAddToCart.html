@@ -1,7 +1,7 @@
 %%GLOBAL_AddToCartButtonControlScript%%
 <form method="post" action="%%GLOBAL_CartLink%%" onsubmit="return check_add_to_cart(this, %%GLOBAL_ProductOptionRequired%%) %%GLOBAL_FastCartButtonJs%%"  enctype="multipart/form-data" id="productDetailsAddToCartForm">
     <input type="hidden" name="action" value="add" />
-    <input type="hidden" name="product_id" value="%%GLOBAL_ProductId%%" />
+    <input type="hidden" name="product_id" value="%%GLOBAL_ProductId%%" class="goog_prod_product_id"/>
     <input type="hidden" name="variation_id" class="CartVariationId" value="" />
     <input type="hidden" name="currency_id" value="" />
     <div class="ProductDetailsGrid ProductAddToCart">
@@ -132,7 +132,7 @@
     <div class="BlockContent">
         <form name="frmWishList" id="frmWishList" action="%%GLOBAL_ShopPath%%/wishlist.php" method="get">
             <input type="hidden" name="action" value="add" />
-            <input type="hidden" name="product_id" value="%%GLOBAL_ProductId%%" />
+            <input type="hidden" name="product_id" value="%%GLOBAL_ProductId%%"/>
             <input type="hidden" name="variation_id" value="" class="WishListVariationId"/>
             <input type="submit" class="wishlist-button" value="Add to wishlist" alt="%%LNG_AddToWishList%%" />
         </form>

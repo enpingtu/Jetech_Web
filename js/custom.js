@@ -14,6 +14,7 @@ initPageMenu = function(){
     
     fixTopSellerFirstList();
     fixSearchResultList();
+    setGoogleAdwordsParameters();
 };
 
 fixTopSellerFirstList = function(){
@@ -72,4 +73,27 @@ fixSearchResultList = function(){
 				$(liObj).append(addBtn);
 				});
 	}
+};
+
+setGoogleAdwordsParameters = function(){
+	// product page
+	if($('.goog_prod_product_id').length>0){
+		google_tag_params.ecomm_prodid = parseInt($('.goog_prod_product_id').val());
+		google_tag_params.ecomm_pagetype = 'product';
+		google_tag_params.ecomm_totalvalue = parseCurrency($('.goog_prod_product_price').text());
+	}else if($('.goog_cart_product_id').length>0){
+		var cartProducts = $('.goog_cart_product_id');
+		google_tag_params.ecomm_prodid = [];
+		cartProducts.each(function(elm){
+			var prodId = $(cartProducts.get(elm)).text();
+			google_tag_params.ecomm_prodid.push(parseInt(prodId));
+		});
+		google_tag_params.ecomm_pagetype = 'cart';
+		google_tag_params.ecomm_totalvalue = parseCurrency($('.goog_cart_price').text());
+	}
+
+};
+
+parseCurrency = function(currency){
+	return Number(currency.replace(/[^0-9\.]+/g,""));
 };

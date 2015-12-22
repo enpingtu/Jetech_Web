@@ -18,6 +18,11 @@
     font-weight: bold;
 }
 
+.header-logo {
+    left: -25px;
+    top: -15px;
+}
+
 .ProductPrice h2, .ProductPrice h3, .CurrentPrice {
     color : #f88824;
     font-weight : bold !important;
@@ -173,7 +178,7 @@
     line-height: 0;
     position: absolute;
     top: -4px;
-    left: 127.6px;
+    left: 149px;
     position: absolute;
 }
 

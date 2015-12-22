@@ -1,53 +1,53 @@
 <div class="footer">
-	<div class="inner">
+    <div class="inner">
 
-		%%Panel.SideNewsletterBox%%
+        %%Panel.SideNewsletterBox%%
 
-		<div class="footer-main">
-			<div class="inner">
-				<div class="footer-columns grid">
-					<div class="grid__item one-quarter"><h4>Further info</h4>%%Panel.PagesMenu%%</div>
-					<div class="grid__item one-quarter">%%Panel.FooterCategoryList%%</div>
-					<div class="grid__item one-quarter">%%Panel.FooterShopByBrand%%</div>
-					<div class="grid__item one-quarter">%%Panel.SocialLinks%%</div>
-				</div>
-			</div>
-		</div>
+        <div class="footer-main">
+            <div class="inner">
+                <div class="footer-columns grid">
+                    <div class="grid__item one-quarter"><h4>Further info</h4>%%Panel.PagesMenu%%</div>
+                    <div class="grid__item one-quarter">%%Panel.FooterCategoryList%%</div>
+                    <div class="grid__item one-quarter">%%Panel.FooterShopByBrand%%</div>
+                    <div class="grid__item one-quarter">%%Panel.SocialLinks%%</div>
+                </div>
+            </div>
+        </div>
 
-		<div class="footer-links">
-			<div class="inner">
+        <div class="footer-links">
+            <div class="inner">
                 <p>
                     <span class="footer-left">
                     <span id="currencyPrices">%%GLOBAL_AllPricesAreInCurrency%%.</span> <span class="copyRight">&copy; %%GLOBAL_Year%% %%GLOBAL_StoreName%%. All Right Reserved.</span> <span class="pie"></span>  <span class="pie"></span> </span>
                     <span class="powered-by"></span>
                 </p>
-				%%GLOBAL_DebugDetails%%
-			</div>
-		</div>
+                %%GLOBAL_DebugDetails%%
+            </div>
+        </div>
 
-	</div>
+    </div>
 </div>
 <script>
   //<![CDATA[
    $(document).ready(function(){
-		$('.footer-columns div.one-quarter').each(function(){
-		 if($(this).find('ul.sf-menu>li>a').length > 10) {
-			var obj = $(this).find('ul.sf-menu');
-			$('<strong><a href="javascript:void(0);" class="ToggleList">Show all</a></strong>').insertAfter(obj);
-		 }
-		 var i = 0;
-		 $(this).find('ul.sf-menu>li>a,ul.treeview>li>a').each(function(){
-			if(i >= 10) {
-				$(this).closest('li').css('display','none');
-			}
-			i++;
-		 });
-		});
+        $('.footer-columns div.one-quarter').each(function(){
+         if($(this).find('ul.sf-menu>li>a').length > 10) {
+            var obj = $(this).find('ul.sf-menu');
+            $('<strong><a href="javascript:void(0);" class="ToggleList">Show all</a></strong>').insertAfter(obj);
+         }
+         var i = 0;
+         $(this).find('ul.sf-menu>li>a,ul.treeview>li>a').each(function(){
+            if(i >= 10) {
+                $(this).closest('li').css('display','none');
+            }
+            i++;
+         });
+        });
 
-		$('.footer-columns .ToggleList').on('click',function() {
-			$(this).parent().siblings('ul').children('li:gt(9)').slideToggle('fast');
-			$(this).text($(this).text() == 'Show all' ? 'Show less' : 'Show all');
-		});
+        $('.footer-columns .ToggleList').on('click',function() {
+            $(this).parent().siblings('ul').children('li:gt(9)').slideToggle('fast');
+            $(this).text($(this).text() == 'Show all' ? 'Show less' : 'Show all');
+        });
 
    });
   //]]>
@@ -63,3 +63,29 @@
 %%GLOBAL_FooterScripts%%
 %%GLOBAL_PinterestJS%%
 %%SNIPPET_FastCartThickBoxJs%%
+
+   <!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_prodid: '',
+ecomm_pagetype: '',
+ecomm_totalvalue: '',
+};
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 937264176;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/937264176/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
