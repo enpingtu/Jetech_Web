@@ -1,0 +1,58 @@
+%%Panel.HTMLHead%%
+    <body>
+        <script type="text/javascript" src="%%GLOBAL_TPL_PATH%%/js/cart.js?%%GLOBAL_JSCacheToken%%"></script>
+        %%Panel.DrawerMenu%%
+        <div class="page">
+            %%Panel.Header%%
+            <div class="main">
+                <div class="inner">
+                <div class="Left fleft">
+                          %%Panel.SideCategoryList%%
+                          %%Panel.SideShopByBrand%%
+                          %%Panel.SideCategoryShopByPrice%%
+                  </div>
+                    <div class="Content Widest" id="LayoutColumn1">
+                        %%Panel.CartBreadcrumb%%
+                        %%Panel.CartHeader%%
+                        <div class="fullwidth">
+                            %%Panel.CartStatusMessage%%
+                            %%Panel.CartContent%%
+                            <div class="CartCode cf">
+                                %%Panel.CartCouponCodeBox%%
+                                %%Panel.CartGiftCertificateCodeBox%%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            %%Panel.Footer%%
+        </div>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_prodid: '',
+ecomm_pagetype: '',
+ecomm_totalvalue: '',
+};
+setGoogleAdwordsParameters();
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 937264176;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/937264176/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+    </body>
+</html>

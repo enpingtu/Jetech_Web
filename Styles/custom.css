@@ -252,3 +252,9 @@ input.addToCartBtnInput{
 .addToCartBtnBox a:hover, .addToCartBtnInput:hover{
     color: #111;
 }
+
+@media screen and (max-width: 1024px){
+.slide-show {
+    padding-bottom:10px;
+}
+}

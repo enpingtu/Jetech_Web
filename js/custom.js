@@ -14,7 +14,7 @@ initPageMenu = function(){
     
     fixTopSellerFirstList();
     fixSearchResultList();
-    setGoogleAdwordsParameters();
+   // setGoogleAdwordsParameters();
 };
 
 fixTopSellerFirstList = function(){
